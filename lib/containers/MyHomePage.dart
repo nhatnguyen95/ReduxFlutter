@@ -12,9 +12,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   _MyHomePageState();
-
-  dynamic storeProvider;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
