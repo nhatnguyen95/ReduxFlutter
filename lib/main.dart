@@ -26,7 +26,6 @@ class MyApp extends StatelessWidget {
           ),
           home: MyHomePage(
             title: 'Flutter & Redux',
-            store: store,
           ),
         ));
   }

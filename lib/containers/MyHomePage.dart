@@ -1,22 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
-import 'package:redux/redux.dart';
 import '../actions/Actions.dart';
 
 class MyHomePage extends StatefulWidget {
-  final Store<int> store;
-
-  MyHomePage({Key key, this.store, this.title}) : super(key: key);
+  MyHomePage({Key key, this.title}) : super(key: key);
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState(store);
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final Store<int> store;
-
-  _MyHomePageState(this.store);
+  _MyHomePageState();
 
   dynamic storeProvider;
 
